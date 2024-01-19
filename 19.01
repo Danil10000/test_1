@@ -1,0 +1,7 @@
+a = 0
+import pandas as pd
+list = pd.read_csv('Data_set.scv', delimiter=';', names=['User_Name', 'User_ID', 'Age', 'Place', 'User_№'])
+while a == 0:
+    column = input('Введите название колонки, данные которой хотите просмотреть: ')
+    index = int(input('Введите строчку, данные которой хотите просмотреть: '))
+    print(list.at[index, column])
