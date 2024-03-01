@@ -1,0 +1,39 @@
+# # Задание С1
+
+# import pandas as pd # Добавляем библиотеку pandas
+# x = pd.read_csv('aboba.csv', delimiter=';', names=['qqq', 'www', 'eee', 'rrr', 'ttt']) # Создаём переменную с датасетом
+# column = input('Введите название колонки: ')
+# line = int(input('Введите номер строки: ')) # Ввод данных столбца и линии для дальнейшего прочтения
+# y = x.at[line, column]
+# print(y) # Вывод данных с определённой ячейки
+# print('') # Разделитель между заданиями по приколу
+# 
+# # Задание В2
+# # pandas уже добавлен
+# 
+# import matplotlib.pyplot as plt # Добавляем библиотеку matplotlib
+# www_column = x[['www']]
+# www_numbers = [www_column.at[1, 'www'], www_column.at[2, 'www'], www_column.at[3, 'www'], www_column.at[4, 'www'], www_column.at[5, 'www'], www_column.at[6, 'www']]
+# www_numbers = str(www_numbers).replace(' ', '')
+# eee_column = x[['eee']]
+# eee_numbers = [eee_column.at[1, 'eee'], eee_column.at[2, 'eee'], eee_column.at[3, 'eee'], eee_column.at[4, 'eee'], eee_column.at[5, 'eee'], eee_column.at[6, 'eee']]
+# eee_numbers = str(eee_numbers).replace(' ', '')
+# rrr_column = x[['rrr']]
+# rrr_numbers = [rrr_column.at[1, 'rrr'], rrr_column.at[2, 'rrr'], rrr_column.at[3, 'rrr'], rrr_column.at[4, 'rrr'], rrr_column.at[5, 'rrr'], rrr_column.at[6, 'rrr']]
+# rrr_numbers = str(rrr_numbers).replace(' ', '')
+# ttt_column = x[['ttt']]
+# ttt_numbers = [ttt_column.at[1, 'ttt'], ttt_column.at[2, 'ttt'], ttt_column.at[3, 'ttt'], ttt_column.at[4, 'ttt'], ttt_column.at[5, 'ttt'], ttt_column.at[6, 'ttt']]
+# ttt_numbers = str(ttt_numbers).replace(' ', '')
+# # Сохраняем данные каждого столбца в переменные, столбец qqq не добавляю так как это нумерация столбцов
+# # print(www_numbers)
+# # www_plot = www_numbers
+# # plt.figure(figsize=(8, 8))
+# # plt.plot(www_plot, linewidth=2, color='red', marker='.', linestyle='-', label='www')
+# # plt.legend()
+# # plt.grid(color='gray', linestyle='-', linewidth=1.5)
+# # plt.yticks([0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9])
+# # plt.xticks()
+# # plt.xlabel('номер')
+# # plt.ylabel('значение')
+# # plt.show()
+# сделал не до конца сориииии
