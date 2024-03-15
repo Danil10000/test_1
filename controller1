@@ -1,0 +1,15 @@
+import view
+import model
+
+
+def run():
+    while True:
+        choice = input('Что вы хотите использовать: обычный калькулятор (введите 1) или калькулятор площадей (введите 2)? Ввод: ')
+        if choice == '1':
+            num1, operator, num2 = view.get_user_input()
+            result = model.calculate(num1, num2, operator)
+            view.display_result(result)
+        elif choice == '2':
+            num1, num2 = view.get_user_input()
+            result = model.calculate_square(num1, num2)
+            view.display_result(result)
